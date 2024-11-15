@@ -54,10 +54,9 @@ public class SearchCountryTest extends BaseTest{
 	@DataProvider(name = "countriesListExcel")
 	public Object[][] dataProviderCountriesListExcel(){
 		
-		Object[][] testData = SpreedSheetData.readExcelData("Paises"
+		return SpreedSheetData.readExcelData("Paises"
 				, "src" + File.separator + "test" + File.separator + "resources" + File.separator+ "paises.xls"
 				, "Dados");
-		return testData;
 		
 	}
 
